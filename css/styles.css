@@ -8,3 +8,65 @@ body {
 h1 {
   color: #333;
 }
+
+img{
+  width: 200px;
+}
+
+#countries-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+ul:has(.countryDisplay){
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.countryDisplay {
+  flex: 1 0 auto;
+  max-width: 200px; /* Ajusta este ancho según tu diseño */
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#infoPaises {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Para centrar vertical y horizontalmente */
+  background-color: lightgray;
+  padding: 50px;
+  border-radius: 20px;
+  z-index: 1;
+  
+  max-height: fit-content;
+  width: 450px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#infoPaises div{
+  display: flex;
+}
+#infoPaises ul{
+  list-style: none;
+}
+#infoPaises div p ul li:first-child{
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 10px;
+}
+#infoPaises span{
+  font-weight: bold;
+}
+button{
+  margin-top: 15px;
+  
+}
